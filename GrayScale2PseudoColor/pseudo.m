@@ -1,0 +1,12 @@
+img=imread("Lenna.png");
+img=rgb2gray(img);
+imshow(img);
+subplot(2,2,1);
+R=img(:,:,1);
+G=img(:,:,2);
+B=img(:,:,3);
+img(:,:,1)=R;
+img(:,:,2)=G;
+img(:,:,3)=B;
+imshow(img);
+subplot(2,2,2)
